@@ -13,7 +13,6 @@ async def on_issue_opened(
     """Whenever an issue is opened, greet the author and say thanks."""
     github_api = RUNTIME_CONTEXT.app_installation_client
     comments_api_url = issue['comments_url']
-    #
     # await github_api.post(url, data={"body": message})
     # url = f"/repos/mariatta/strange-relationship/issues/{issue_number}/comments"
 
